@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		712BCC7D19A8F9CF004B7323 /* RARecipes.m in Sources */ = {isa = PBXBuildFile; fileRef = 712BCC7C19A8F9CF004B7323 /* RARecipes.m */; };
 		71B9217019A7F29F00184A19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B9216F19A7F29F00184A19 /* AppDelegate.swift */; };
 		71B9217219A7F29F00184A19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71B9217119A7F29F00184A19 /* Images.xcassets */; };
 		71B9217E19A7F29F00184A19 /* Recipe_App_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B9217D19A7F29F00184A19 /* Recipe_App_SwiftTests.swift */; };
+		71C56FE319A8EF6500C7B895 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C56FE219A8EF6500C7B895 /* RecipesViewController.swift */; };
+		71C56FE519A8EF7800C7B895 /* RecipesTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C56FE419A8EF7800C7B895 /* RecipesTableViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +26,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		712BCC7A19A8F9CE004B7323 /* Recipe-App-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Recipe-App-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		712BCC7B19A8F9CF004B7323 /* RARecipes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RARecipes.h; sourceTree = "<group>"; };
+		712BCC7C19A8F9CF004B7323 /* RARecipes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RARecipes.m; sourceTree = "<group>"; };
 		71B9216A19A7F29F00184A19 /* Recipe-App-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe-App-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B9216E19A7F29F00184A19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71B9216F19A7F29F00184A19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +36,8 @@
 		71B9217719A7F29F00184A19 /* Recipe-App-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Recipe-App-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B9217C19A7F29F00184A19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71B9217D19A7F29F00184A19 /* Recipe_App_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe_App_SwiftTests.swift; sourceTree = "<group>"; };
+		71C56FE219A8EF6500C7B895 /* RecipesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
+		71C56FE419A8EF7800C7B895 /* RecipesTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesTableViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +80,13 @@
 			isa = PBXGroup;
 			children = (
 				71B9216F19A7F29F00184A19 /* AppDelegate.swift */,
+				71C56FE219A8EF6500C7B895 /* RecipesViewController.swift */,
+				71C56FE419A8EF7800C7B895 /* RecipesTableViewDataSource.swift */,
+				712BCC7B19A8F9CF004B7323 /* RARecipes.h */,
+				712BCC7C19A8F9CF004B7323 /* RARecipes.m */,
 				71B9217119A7F29F00184A19 /* Images.xcassets */,
 				71B9216D19A7F29F00184A19 /* Supporting Files */,
+				712BCC7A19A8F9CE004B7323 /* Recipe-App-Swift-Bridging-Header.h */,
 			);
 			path = "Recipe-App-Swift";
 			sourceTree = "<group>";
@@ -200,6 +213,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71C56FE319A8EF6500C7B895 /* RecipesViewController.swift in Sources */,
+				712BCC7D19A8F9CF004B7323 /* RARecipes.m in Sources */,
+				71C56FE519A8EF7800C7B895 /* RecipesTableViewDataSource.swift in Sources */,
 				71B9217019A7F29F00184A19 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,9 +321,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Recipe-App-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Recipe-App-Swift/Recipe-App-Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -316,9 +335,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Recipe-App-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Recipe-App-Swift/Recipe-App-Swift-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -375,6 +396,7 @@
 				71B9218319A7F29F00184A19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71B9218419A7F29F00184A19 /* Build configuration list for PBXNativeTarget "Recipe-App-SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -383,6 +405,7 @@
 				71B9218619A7F29F00184A19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
