@@ -26,4 +26,12 @@ class RecipesTableViewDataSource: NSObject, UITableViewDataSource {
         return cell
     }
     
+    func heightForIndexPath(indexPath: NSIndexPath) -> CGFloat {
+        return 44
+    }
+    
+    func tableView(tableView: UITableView!, titleForHeaderInSection section: Int) -> String! {
+        return "Recipe.com"
+    }
+    
 }

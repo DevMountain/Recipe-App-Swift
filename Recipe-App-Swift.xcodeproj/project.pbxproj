@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		712BCC7D19A8F9CF004B7323 /* RARecipes.m in Sources */ = {isa = PBXBuildFile; fileRef = 712BCC7C19A8F9CF004B7323 /* RARecipes.m */; };
+		7150974419AA346700E6AE2A /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7150974319AA346700E6AE2A /* RecipeDetailViewController.swift */; };
 		71B9217019A7F29F00184A19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B9216F19A7F29F00184A19 /* AppDelegate.swift */; };
 		71B9217219A7F29F00184A19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71B9217119A7F29F00184A19 /* Images.xcassets */; };
 		71B9217E19A7F29F00184A19 /* Recipe_App_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B9217D19A7F29F00184A19 /* Recipe_App_SwiftTests.swift */; };
@@ -29,6 +30,7 @@
 		712BCC7A19A8F9CE004B7323 /* Recipe-App-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Recipe-App-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		712BCC7B19A8F9CF004B7323 /* RARecipes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RARecipes.h; sourceTree = "<group>"; };
 		712BCC7C19A8F9CF004B7323 /* RARecipes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RARecipes.m; sourceTree = "<group>"; };
+		7150974319AA346700E6AE2A /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 		71B9216A19A7F29F00184A19 /* Recipe-App-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe-App-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B9216E19A7F29F00184A19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71B9216F19A7F29F00184A19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				71B9216F19A7F29F00184A19 /* AppDelegate.swift */,
 				71C56FE219A8EF6500C7B895 /* RecipesViewController.swift */,
 				71C56FE419A8EF7800C7B895 /* RecipesTableViewDataSource.swift */,
+				7150974319AA346700E6AE2A /* RecipeDetailViewController.swift */,
 				712BCC7B19A8F9CF004B7323 /* RARecipes.h */,
 				712BCC7C19A8F9CF004B7323 /* RARecipes.m */,
 				71B9217119A7F29F00184A19 /* Images.xcassets */,
@@ -216,6 +219,7 @@
 				71C56FE319A8EF6500C7B895 /* RecipesViewController.swift in Sources */,
 				712BCC7D19A8F9CF004B7323 /* RARecipes.m in Sources */,
 				71C56FE519A8EF7800C7B895 /* RecipesTableViewDataSource.swift in Sources */,
+				7150974419AA346700E6AE2A /* RecipeDetailViewController.swift in Sources */,
 				71B9217019A7F29F00184A19 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

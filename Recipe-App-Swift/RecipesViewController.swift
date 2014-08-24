@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecipesViewController: UIViewController {
+class RecipesViewController: UIViewController, UITableViewDelegate {
 
     var tableView: UITableView?
     var dataSource: RecipesTableViewDataSource?
@@ -19,6 +19,7 @@ class RecipesViewController: UIViewController {
         dataSource = RecipesTableViewDataSource()
         
         tableView = UITableView(frame: self.view.bounds, style: .Grouped)
+        tableView?.delegate = self;
         tableView?.dataSource = dataSource
         self.view.addSubview(tableView!)
         
@@ -30,15 +31,18 @@ class RecipesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView!, heightForRowAtIndexPath indexPath: NSIndexPath!) -> CGFloat {
+        return 44;
     }
-    */
+    
+    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        var detailViewController = RecipeDetailViewController()
+        detailViewController.recipeIndex = indexPath.row
+        self.navigationController.pushViewController(detailViewController, animated: true)
+        
+    }
 
 }
