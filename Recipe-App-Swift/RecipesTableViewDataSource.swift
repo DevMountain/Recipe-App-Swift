@@ -30,7 +30,7 @@ class RecipesTableViewDataSource: NSObject, UITableViewDataSource {
         return 44
     }
     
-    func tableView(tableView: UITableView!, titleForHeaderInSection section: Int) -> String! {
+	func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Recipe.com"
     }
     

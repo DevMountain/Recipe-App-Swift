@@ -85,7 +85,7 @@ public class RecipeDetailViewController: UIViewController {
         
         for i in 0...(RARecipes.directionsAtIndex(self.recipeIndex).count - 1) {
             
-            var height = self.heightForText(RARecipes.directionsAtIndex(self.recipeIndex)[i] as String, constrainedToWidth: (self.view.frame.size.width - 2 * margin - 40))
+            var height = self.heightForText(RARecipes.directionsAtIndex(self.recipeIndex)[i] as! String, constrainedToWidth: (self.view.frame.size.width - 2 * margin - 40))
             
             var count = UILabel(frame: CGRectMake(margin, top, 30, 20))
             count.font = .boldSystemFontOfSize(17)
@@ -94,7 +94,7 @@ public class RecipeDetailViewController: UIViewController {
 
             var direction = UILabel(frame: CGRectMake(margin + 30, top, (self.view.frame.size.width - 2 * margin - 40), height))
             direction.numberOfLines = 0;
-            direction.text = RARecipes.directionsAtIndex(self.recipeIndex)[i] as String
+            direction.text = RARecipes.directionsAtIndex(self.recipeIndex)[i] as? String
 
             scrollView.addSubview(direction)
             

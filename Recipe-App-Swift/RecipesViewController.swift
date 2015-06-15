@@ -31,17 +31,17 @@ class RecipesViewController: UIViewController, UITableViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(tableView: UITableView!, heightForRowAtIndexPath indexPath: NSIndexPath!) -> CGFloat {
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 44;
     }
     
-    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
         var detailViewController = RecipeDetailViewController()
         detailViewController.recipeIndex = indexPath.row
-        self.navigationController.pushViewController(detailViewController, animated: true)
+        self.navigationController!.pushViewController(detailViewController, animated: true)
         
     }
 
